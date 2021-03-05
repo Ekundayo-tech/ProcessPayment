@@ -15,7 +15,7 @@ namespace PaymentProcess.Controllers
 {
     [Route("Payments/api")]
     [ApiController]
-    public class PaymentController : Controller
+    public class PaymentController : BaseController
     {
         [ProducesResponseType(typeof(ResponseModel), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(ResponseModel<PaymentDto>), (int)HttpStatusCode.OK)]
